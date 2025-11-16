@@ -1,0 +1,12 @@
+C:\Users\Eddy Jr\Documents\Clases\Programacion Estructurada\Innovatec\Innovatec\bin\Debug\Innovatec.exe.config
+C:\Users\Eddy Jr\Documents\Clases\Programacion Estructurada\Innovatec\Innovatec\bin\Debug\Innovatec.exe
+C:\Users\Eddy Jr\Documents\Clases\Programacion Estructurada\Innovatec\Innovatec\bin\Debug\Innovatec.pdb
+C:\Users\Eddy Jr\Documents\Clases\Programacion Estructurada\Innovatec\Innovatec\obj\Debug\Innovatec.csproj.AssemblyReference.cache
+C:\Users\Eddy Jr\Documents\Clases\Programacion Estructurada\Innovatec\Innovatec\obj\Debug\Innovatec.Form1.resources
+C:\Users\Eddy Jr\Documents\Clases\Programacion Estructurada\Innovatec\Innovatec\obj\Debug\Innovatec.Forms.FrmArbol.resources
+C:\Users\Eddy Jr\Documents\Clases\Programacion Estructurada\Innovatec\Innovatec\obj\Debug\Innovatec.Properties.Resources.resources
+C:\Users\Eddy Jr\Documents\Clases\Programacion Estructurada\Innovatec\Innovatec\obj\Debug\Innovatec.csproj.GenerateResource.cache
+C:\Users\Eddy Jr\Documents\Clases\Programacion Estructurada\Innovatec\Innovatec\obj\Debug\Innovatec.csproj.CoreCompileInputs.cache
+C:\Users\Eddy Jr\Documents\Clases\Programacion Estructurada\Innovatec\Innovatec\obj\Debug\Innovatec.exe
+C:\Users\Eddy Jr\Documents\Clases\Programacion Estructurada\Innovatec\Innovatec\obj\Debug\Innovatec.pdb
+C:\Users\Eddy Jr\Documents\Clases\Programacion Estructurada\Innovatec\Innovatec\obj\Debug\Innovatec.exe.config
