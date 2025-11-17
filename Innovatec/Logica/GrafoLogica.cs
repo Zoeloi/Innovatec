@@ -24,55 +24,79 @@ namespace Innovatec.Logica
         // Conectar edificios
         public void ConectarEdificios(string edificio1, string edificio2, int distancia) // agregamos aristas
         {
-            
-            foreach (var edificio in edificios)
+            // Conectar edificio1 → edificio2
+            var edificioA = edificios.Find(e => e.NombreEdificio == edificio1);
+            if (edificioA != null)
             {
-                if (edificio.NombreEdificio == edificio1)
-                {
-                    edificio.EdificiosConectados.Add(edificio2);
-                    edificio.Distancias.Add(distancia);
-                }
+                edificioA.EdificiosConectados.Add(edificio2);
+                edificioA.Distancias.Add(distancia);
+            }
+
+            // Conectar edificio2 → edificio1 (¡FALTA ESTA PARTE!)
+            var edificioB = edificios.Find(e => e.NombreEdificio == edificio2);
+            if (edificioB != null)
+            {
+                edificioB.EdificiosConectados.Add(edificio1);
+                edificioB.Distancias.Add(distancia);
             }
         }
 
         // Calcular ruta esto si esta chatgepeteado eddy se disculpa le falle
         public string CalcularRutaMasCorta(string origen, string destino)
         {
-            // Buscar si hay conexión directa
-            foreach (var edificio in edificios)
+            // Verificar que existen los edificios
+            if (!edificios.Any(e => e.NombreEdificio == origen) ||
+                !edificios.Any(e => e.NombreEdificio == destino))
             {
-                if (edificio.NombreEdificio == origen)
-                {
-                    for (int i = 0; i < edificio.EdificiosConectados.Count; i++)
-                    {
-                        if (edificio.EdificiosConectados[i] == destino)
-                        {
-                            int distancia = edificio.Distancias[i];
-                            return $"{origen} → {destino} ({distancia}m) - Ruta directa";
-                        }
-                    }
-                }
+                return "Uno de los edificios no existe";
             }
 
-            // Buscar rutas con una escala
-            foreach (var edificio in edificios)
+            // Lista para guardar todas las rutas posibles
+            var rutasEncontradas = new List<string>();
+
+            // Buscar TODAS las rutas posibles
+            BuscarTodasLasRutas(origen, destino, new List<string> { origen }, 0, rutasEncontradas);
+
+            if (rutasEncontradas.Count > 0)
             {
-                if (edificio.NombreEdificio == origen)
-                {
-                    foreach (string conexion in edificio.EdificiosConectados)
-                    {
-                        var edificioConexion = edificios.Find(e => e.NombreEdificio == conexion);
-                        if (edificioConexion != null && edificioConexion.EdificiosConectados.Contains(destino))
-                        {
-                            int dist1 = edificio.Distancias[edificio.EdificiosConectados.IndexOf(conexion)];
-                            int dist2 = edificioConexion.Distancias[edificioConexion.EdificiosConectados.IndexOf(destino)];
-                            return $"{origen} → {conexion} → {destino} ({dist1 + dist2}m)";
-                        }
-                    }
-                }
+                // Encontrar la ruta más corta
+                var rutaMasCorta = rutasEncontradas.OrderBy(r => {
+                    // Extraer la distancia del string "A → B → C (200m)"
+                    var start = r.LastIndexOf('(') + 1;
+                    var end = r.LastIndexOf('m');
+                    return int.Parse(r.Substring(start, end - start));
+                }).First();
+
+                return rutaMasCorta;
             }
 
             return "No hay ruta disponible";
+        }
+
+        // Método recursivo para buscar rutas
+        private void BuscarTodasLasRutas(string actual, string destino, List<string> rutaActual, int distanciaActual, List<string> rutasEncontradas)
+        {
+            if (actual == destino)
+            {
+                string ruta = string.Join(" → ", rutaActual) + $" ({distanciaActual}m)";
+                rutasEncontradas.Add(ruta);
+                return;
+            }
+
+            var edificio = edificios.Find(e => e.NombreEdificio == actual);
+            if (edificio == null) return;
+
+            for (int i = 0; i < edificio.EdificiosConectados.Count; i++)
+            {
+                string siguiente = edificio.EdificiosConectados[i];
+                int distancia = edificio.Distancias[i];
+
+                if (!rutaActual.Contains(siguiente)) // Evitar ciclos
+                {
+                    var nuevaRuta = new List<string>(rutaActual) { siguiente };
+                    BuscarTodasLasRutas(siguiente, destino, nuevaRuta, distanciaActual + distancia, rutasEncontradas);
+                }
+            }
         }
     }
 }

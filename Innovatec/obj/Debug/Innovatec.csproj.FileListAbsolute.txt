@@ -23,3 +23,4 @@ C:\Users\Eddy Jr\Documents\Innovatec\Innovatec\obj\Debug\Innovatec.csproj.CoreCo
 C:\Users\Eddy Jr\Documents\Innovatec\Innovatec\obj\Debug\Innovatec.exe
 C:\Users\Eddy Jr\Documents\Innovatec\Innovatec\obj\Debug\Innovatec.pdb
 C:\Users\Eddy Jr\Documents\Innovatec\Innovatec\obj\Debug\Innovatec.Forms.FrmGrafo.resources
+C:\Users\Eddy Jr\Documents\Clases\Programacion Estructurada\Innovatec\Innovatec\obj\Debug\Innovatec.Forms.FrmGrafo.resources
