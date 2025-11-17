@@ -23,26 +23,39 @@ namespace Innovatec.Forms
 
         private void btnContar_Click(object sender, EventArgs e)
         {
-            
-            var empleado = logicaArbol.BuscarEmpleado(btnBuscar.Text);
+            int total = logicaArbol.ContarTotalEmpleados();
+            MessageBox.Show($"Total de empleados: {total}");
 
-            if (empleado != null)
-            {
-                MessageBox.Show($"Encontrado: {empleado.Nombre} - {empleado.Cargo}");
-            }
-            else
-            {
-                MessageBox.Show("Empleado no encontrado");
-            }
         }
 
         
 
         private void tbnAgregar_Click(object sender, EventArgs e)
         {
-            logicaArbol.AgregarEmpleado(tbNombre.Text, tbCargo.Text, tbDepartamento.Text, tbSupervisor.Text);
+            logicaArbol.AgregarEmpleado(tbNombre.Text, tbCargo.Text, tbSupervisor.Text);
             logicaArbol.CargarTreeView(treeView1);
             MessageBox.Show("Empleado agregado");
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            var empleado = logicaArbol.BuscarEmpleado(tbBuscar.Text);
+
+            // Limpiar el ListBox antes de agregar nuevo resultado
+            lbResultados.Items.Clear();
+
+            if (empleado != null)
+            {
+                // Agregar la info al ListBox
+                lbResultados.Items.Add($"Nombre: {empleado.Nombre}");
+                lbResultados.Items.Add($"Cargo: {empleado.Cargo}");
+                lbResultados.Items.Add($"Supervisor: {empleado.Supervisor}");
+                lbResultados.Items.Add(""); // Línea vacía
+            }
+            else
+            {
+                lbResultados.Items.Add("Empleado no encontrado");
+            }
         }
     }
 }

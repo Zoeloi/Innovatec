@@ -22,5 +22,11 @@ namespace Innovatec
             FrmArbol frm = new FrmArbol();
             frm.Show();
         }
+
+        private void rutasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmGrafo frm = new FrmGrafo();
+            frm.Show();
+        }
     }
 }

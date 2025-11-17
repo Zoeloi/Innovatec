@@ -14,13 +14,12 @@ namespace Innovatec.Logica
         }
 
         // 1. AGREGAR EMPLEADO
-        public void AgregarEmpleado(string nombre, string cargo, string departamento, string supervisor)
+        public void AgregarEmpleado(string nombre, string cargo,  string supervisor)
         {
             var nuevoEmpleado = new Clase.ArbolOrganizacional
             {
                 Nombre = nombre,
                 Cargo = cargo,
-                Departamento = departamento,
                 Supervisor = supervisor
             };
             empleados.Add(nuevoEmpleado);
@@ -48,18 +47,30 @@ namespace Innovatec.Logica
         {
             treeView.Nodes.Clear();
 
-            var raiz = empleados.FirstOrDefault(e => string.IsNullOrEmpty(e.Supervisor));
+            // Buscar TODOS los empleados que no tienen supervisor 
+            var supervisores = empleados.Where(e => string.IsNullOrEmpty(e.Supervisor)).ToList();
 
-            if (raiz != null)
+            foreach (var supervisor in supervisores)
             {
-                TreeNode nodeRaiz = new TreeNode($"{raiz.Nombre} ({raiz.Cargo})");  // ← raiz.Nombre
-                treeView.Nodes.Add(nodeRaiz);
+                TreeNode nodoRaiz = new TreeNode($"{supervisor.Nombre} ({supervisor.Cargo})");
+                treeView.Nodes.Add(nodoRaiz);
 
-                AgregarSubordinados(raiz, nodeRaiz);  // ← (raiz, nodeRaiz)
+                // Agregar sus subordinados
+                AgregarSubordinados(supervisor, nodoRaiz);
             }
-        }  
+
+            // Si no hay supervisores, mostrar todos los empleados como raíces
+            if (!supervisores.Any()) /// me ayudo la IA
+            {
+                foreach (var empleado in empleados)
+                {
+                    TreeNode nodo = new TreeNode($"{empleado.Nombre} ({empleado.Cargo})");
+                    treeView.Nodes.Add(nodo);
+                }
+            }
+        }
         private void AgregarSubordinados(Clase.ArbolOrganizacional empleado, TreeNode nodoPadre)
-        {
+        { //me ayudo la IA
             var subordinados = empleados.Where(e => e.Supervisor == empleado.Nombre).ToList();
 
             foreach (var sub in subordinados)
