@@ -32,7 +32,7 @@ namespace Innovatec.Logica
                 edificioA.Distancias.Add(distancia);
             }
 
-            // Conectar edificio2 → edificio1 (¡FALTA ESTA PARTE!)
+            // Conectar edificio2 → edificio1 
             var edificioB = edificios.Find(e => e.NombreEdificio == edificio2);
             if (edificioB != null)
             {

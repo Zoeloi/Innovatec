@@ -3,16 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Eddy Jr\\Documents\\Clases\\Programacion Estructurada\\Innovatec\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{783C43B2-273D-4D4C-862C-76FD69BC2BFC}|Innovatec\\Innovatec.csproj|C:\\Users\\Eddy Jr\\Documents\\Clases\\Programacion Estructurada\\Innovatec\\innovatec\\logica\\grafologica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{783C43B2-273D-4D4C-862C-76FD69BC2BFC}|Innovatec\\Innovatec.csproj|solutionrelative:innovatec\\logica\\grafologica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{783C43B2-273D-4D4C-862C-76FD69BC2BFC}|Innovatec\\Innovatec.csproj|c:\\users\\eddy jr\\documents\\clases\\programacion estructurada\\innovatec\\innovatec\\logica\\arbollogica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{783C43B2-273D-4D4C-862C-76FD69BC2BFC}|Innovatec\\Innovatec.csproj|solutionrelative:innovatec\\logica\\arbollogica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{783C43B2-273D-4D4C-862C-76FD69BC2BFC}|Innovatec\\Innovatec.csproj|c:\\users\\eddy jr\\documents\\clases\\programacion estructurada\\innovatec\\innovatec\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{783C43B2-273D-4D4C-862C-76FD69BC2BFC}|Innovatec\\Innovatec.csproj|solutionrelative:innovatec\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{783C43B2-273D-4D4C-862C-76FD69BC2BFC}|Innovatec\\Innovatec.csproj|c:\\users\\eddy jr\\documents\\clases\\programacion estructurada\\innovatec\\innovatec\\clase\\grafo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{783C43B2-273D-4D4C-862C-76FD69BC2BFC}|Innovatec\\Innovatec.csproj|solutionrelative:innovatec\\clase\\grafo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{783C43B2-273D-4D4C-862C-76FD69BC2BFC}|Innovatec\\Innovatec.csproj|c:\\users\\eddy jr\\documents\\clases\\programacion estructurada\\innovatec\\innovatec\\clase\\arbol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{783C43B2-273D-4D4C-862C-76FD69BC2BFC}|Innovatec\\Innovatec.csproj|solutionrelative:innovatec\\clase\\arbol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{783C43B2-273D-4D4C-862C-76FD69BC2BFC}|Innovatec\\Innovatec.csproj|c:\\users\\eddy jr\\documents\\clases\\programacion estructurada\\innovatec\\innovatec\\forms\\frmgrafo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{783C43B2-273D-4D4C-862C-76FD69BC2BFC}|Innovatec\\Innovatec.csproj|solutionrelative:innovatec\\forms\\frmgrafo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{783C43B2-273D-4D4C-862C-76FD69BC2BFC}|Innovatec\\Innovatec.csproj|c:\\users\\eddy jr\\documents\\clases\\programacion estructurada\\innovatec\\innovatec\\forms\\frmgrafo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{783C43B2-273D-4D4C-862C-76FD69BC2BFC}|Innovatec\\Innovatec.csproj|C:\\Users\\Eddy Jr\\Documents\\Clases\\Programacion Estructurada\\Innovatec\\innovatec\\forms\\frmgrafo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{783C43B2-273D-4D4C-862C-76FD69BC2BFC}|Innovatec\\Innovatec.csproj|solutionrelative:innovatec\\forms\\frmgrafo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{783C43B2-273D-4D4C-862C-76FD69BC2BFC}|Innovatec\\Innovatec.csproj|c:\\users\\eddy jr\\documents\\clases\\programacion estructurada\\innovatec\\innovatec\\logica\\grafologica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{783C43B2-273D-4D4C-862C-76FD69BC2BFC}|Innovatec\\Innovatec.csproj|solutionrelative:innovatec\\logica\\grafologica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,11 +38,62 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Eddy Jr\\Documents\\Clases\\Programacion Estructurada\\Innovatec\\Innovatec\\Form1.cs",
+              "RelativeDocumentMoniker": "Innovatec\\Form1.cs",
+              "ToolTip": "C:\\Users\\Eddy Jr\\Documents\\Clases\\Programacion Estructurada\\Innovatec\\Innovatec\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Innovatec\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T15:50:00.399Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Grafo.cs",
+              "DocumentMoniker": "C:\\Users\\Eddy Jr\\Documents\\Clases\\Programacion Estructurada\\Innovatec\\Innovatec\\Clase\\Grafo.cs",
+              "RelativeDocumentMoniker": "Innovatec\\Clase\\Grafo.cs",
+              "ToolTip": "C:\\Users\\Eddy Jr\\Documents\\Clases\\Programacion Estructurada\\Innovatec\\Innovatec\\Clase\\Grafo.cs",
+              "RelativeToolTip": "Innovatec\\Clase\\Grafo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T15:45:32.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "ArbolLogica.cs",
+              "DocumentMoniker": "C:\\Users\\Eddy Jr\\Documents\\Clases\\Programacion Estructurada\\Innovatec\\Innovatec\\Logica\\ArbolLogica.cs",
+              "RelativeDocumentMoniker": "Innovatec\\Logica\\ArbolLogica.cs",
+              "ToolTip": "C:\\Users\\Eddy Jr\\Documents\\Clases\\Programacion Estructurada\\Innovatec\\Innovatec\\Logica\\ArbolLogica.cs",
+              "RelativeToolTip": "Innovatec\\Logica\\ArbolLogica.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwBwAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T15:45:00.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Arbol.cs",
+              "DocumentMoniker": "C:\\Users\\Eddy Jr\\Documents\\Clases\\Programacion Estructurada\\Innovatec\\Innovatec\\Clase\\Arbol.cs",
+              "RelativeDocumentMoniker": "Innovatec\\Clase\\Arbol.cs",
+              "ToolTip": "C:\\Users\\Eddy Jr\\Documents\\Clases\\Programacion Estructurada\\Innovatec\\Innovatec\\Clase\\Arbol.cs",
+              "RelativeToolTip": "Innovatec\\Clase\\Arbol.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T15:44:59.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "FrmGrafo.cs",
               "DocumentMoniker": "C:\\Users\\Eddy Jr\\Documents\\Clases\\Programacion Estructurada\\Innovatec\\Innovatec\\Forms\\FrmGrafo.cs",
               "RelativeDocumentMoniker": "Innovatec\\Forms\\FrmGrafo.cs",
@@ -39,20 +106,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "GrafoLogica.cs",
               "DocumentMoniker": "C:\\Users\\Eddy Jr\\Documents\\Clases\\Programacion Estructurada\\Innovatec\\Innovatec\\Logica\\GrafoLogica.cs",
               "RelativeDocumentMoniker": "Innovatec\\Logica\\GrafoLogica.cs",
               "ToolTip": "C:\\Users\\Eddy Jr\\Documents\\Clases\\Programacion Estructurada\\Innovatec\\Innovatec\\Logica\\GrafoLogica.cs",
               "RelativeToolTip": "Innovatec\\Logica\\GrafoLogica.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAkwCAAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-17T15:18:36.565Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "FrmGrafo.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Eddy Jr\\Documents\\Clases\\Programacion Estructurada\\Innovatec\\Innovatec\\Forms\\FrmGrafo.cs",
               "RelativeDocumentMoniker": "Innovatec\\Forms\\FrmGrafo.cs",
